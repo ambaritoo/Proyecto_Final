@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./src/img/b830724cece27ca702a0f12f0b809f72.jpg" width="45" height="45">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Inicio
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/img/Bodega_Aurrera_Macuspana.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/Super_Chedraui_Isla_Mujeres.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/descarga.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    <!-- CONTAINER -->
+    <!-- Crearemos un contenedor con BULMA, donde del lado izquierdo nos muestre un formulario y del lado derecho las tareas -->
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Compra Del Super
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <form id="task-form" onsubmit="createTask(event)">
+                                <div class="field">
+                                    <label class="label">Lista</label>
+                                   
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">1-Huevos</label>
+                                    <label class="label">2-Leche</label>
+                                    <label class="label">3-Azucar</label>
+                                    <label class="label">4-Mantequilla</label>
+                                    <div class="control">
+                                     
+                                    </div>
+                                </div>
+
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button type="submit" class="button is-link" id="save-task">Guardar</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-link is-light" id="cancel-task">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            SuperMercados Sugeridos
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <table class="table is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Chedraui</th>
+                                        <th>Aurrera</th>
+                                        <th>Walmart</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tasks">
+                                    <!-- Aquí se mostrarán las tareas -->
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAINER -->
+
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src=" ./assets/js/navbar.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
